@@ -1,0 +1,47 @@
+/* body{
+    background-color: #2d3436;
+} */
+
+h1{
+    color: #2d3436;
+}
+h3{
+    color: #2d3436;
+}
+#principal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #2d3436;
+}
+
+.lunes{
+    border: 3px solid #e0e0e0;
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    color: #2d3436;
+    overflow: hidden;
+    padding: 0;
+}
+
+.lunes label{
+    display: block;
+    padding: 5px;
+}
+
+.tarea{
+    margin: 0;
+    font-size: 15px;
+    color: #2d3436;
+    background-color: #a8dadc;
+    padding: 10px;
+}
+
+hr{
+    background-color: #2d3436;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
