@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="formularios.css" />
-    <title>Document</title>
+    <title>Cartas de Estudio</title>
   </head>
   <body>
     <center>
@@ -11,19 +11,32 @@
     <h3>Esta lista me ayuda a poder tener control de los temas que estudio.</h3></center>
     <div id="principal">
       <div class="lunes">  
-        <p class="tarea"><img src="feliz.png" alt="sandia-feliz" class="sandia-feliz">    Lunes</p>
+        <p class="tarea"><img src="feliz.png" alt="sandia-feliz" class="sandia-feliz">     Lunes - Matemáticas</p>
         <hr />
-        <label for="">
+        <label for="Preguntas">
           <input type="checkbox" />
-          
-
+            Estudiar Ecuaciones Cuadraticas
           <br /><br />
           ¿Que aprendi hoy?
-          <textarea name="reflexion" id="reflexion"></textarea>
+          <textarea name="reflexion" class="reflexion" placeholder="Escribe lo que piensas.."></textarea>
           <br /><br />
 
-          ¿Estas satisfecho con esta tarea? <br />
-          <input type="radio" /> Si <input type="radio" /> No
+
+          Dime el nivel de dificultad de esta tarea: <br />
+          <!-- Para que funcionen los input tipo radio, se tienen que colocar el atributo name y el name tiene que ser iguales para que solo seleccione una opcion, si los 3 tienen otros nombres se seleccionaran los otros 3... -->
+          <input type="radio" name="dificultad"/> Facil
+          <input type="radio" name="dificultad"/> Media
+          <input type="radio" name="dificultad"/> Dificil
+          <br><br>
+          ¿Cuantos pomodoros hiciste? <br>
+          <input type="number" min="1" max="10" class="pomodoros">
+            <br><br>
+          Fecha Limite: <br>
+          <input type="date" class="fecha"/> <br><br>
+            <center>
+                <button class="button">Marcar como completado</button>
+            </center>
+            
         </label>
       </div>
 
@@ -36,7 +49,7 @@
 
           <br /><br />
           Reflexion:
-          <textarea name="" id=""></textarea>
+          <textarea name="" class=""></textarea>
           <br /><br />
 
           ¿Estas satisfecho con esta tarea? <br />
